@@ -7,6 +7,8 @@ import News from "../components/home/News";
 import Testimonial from "../components/home/Testimonial";
 import About from "../components/home/About";
 import Services from "../components/home/Services";
+import Newsletter from "../common/Newsletter";
+import Footer from "../common/Footer";
 
 const Home = () => {
   return (
@@ -16,9 +18,11 @@ const Home = () => {
       <About />
       <Welcome/>
       <Categories/>
-      {/* <Services /> */}
-      <News/>
-      <Testimonial/>
+      <Services />
+      <Newsletter />
+      {/* <News/> */}
+      {/* <Testimonial/> */}
+      <Footer />
     </div>
   );
 };
