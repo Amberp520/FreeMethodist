@@ -13,7 +13,7 @@ const Navbar = () => {
     { title: "EVENTS", link: "/" },
     { title: "MINISTRIES", link: "/" },
     { title: "GALLERY", link: "/" },
-    { title: "CONTACT US", link: "/" },
+    { title: "CONTACT US", link: "/contact-us" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);

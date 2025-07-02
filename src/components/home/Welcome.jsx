@@ -49,7 +49,7 @@ const Welcome = () => {
         </div>
         <div className="flex lg:hidden h-full w-full justify-center">
           <img
-            className="h-[500px] w-fit object-cover rounded-b-[40rem]"
+            className="h-[400px] md:h-[500px] w-fit object-cover rounded-b-[40rem]"
             src={priest}
             alt=""
           />

@@ -7,10 +7,10 @@ import { GoArrowRight } from "react-icons/go";
 const About = () => {
   return (
     <div className="h-fit grid lg:grid-cols-[45%_50%] lg:gap-[5%]">
-      <div className="relative flex items-end h-[600px] w-full p-8">
+      <div className="relative flex items-end h-[500px] md:h-[600px] w-full p-8">
         <div className="relative" />
         <img
-          className="relative shrink-0 h-[80%] w-[70%] object-cover rounded-[0_0_0_50px]"
+          className="relative shrink-0 h-[80%] w-[80%] md:w-[70%] object-cover rounded-[0_0_0_50px]"
           src={church1}
           alt=""
         />
