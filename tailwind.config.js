@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        firasanscondensed: ["Fira Sans Condensed", "sans-serif"]
+      },
+      colors: {
+        primary: "#f47e3a"
+      }
+    },
   },
   plugins: [],
 }

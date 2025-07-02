@@ -36,7 +36,7 @@ const Testimonial = () => {
            {testItems.map((test, i) => (
                <div key={i} className="h-[25rem] w-[20rem] flex flex-col items-center text-center shadow-xl p-6">
                  <img className="h-[5rem] w-[5rem] object-cover rounded-[50rem] mb-5" src={test.Image} alt="" />
-                 <p className="mb-3 font-bold text-[1.3rem] text-[#c66730]">{test.Test1}</p>
+                 <p className="mb-3 font-bold text-[1.3rem] text-primary">{test.Test1}</p>
                  <p className="text-[1.1rem]">{test.Test2}</p>
                </div>
            ))}

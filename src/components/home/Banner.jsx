@@ -1,29 +1,34 @@
 import React from "react";
 import church from "../../assets/stand.jpeg";
 
-
 const Banner = () => {
   return (
     <>
-      <div className="h-[87vh] w-full relative">
+      <div className="h-[90dvh] 2xl:h-[800px] w-full relative">
         <img
           className="h-full w-full object-cover absolute top-0 left-0"
           src={church}
-          alt="" />
+          alt=""
+        />
         <div className="h-full w-full absolute bg-black top-0 opacity-60" />
 
-        <div className="h-[85vh] relative z-10 text-white flex items-center justify-center">
-          <div className="w-[70rem]"> 
-            <p className="text-[0.9rem] mb-3 ">WELCOME TO FREE METHODIST CHURCH</p>
-            <p className="text-[3.3rem] mb-9 font-bitter">FAITH. EDUCATION & <br /> COMMUNITY</p>
-            <div className="flex gap-4">
-            <button className="bg-[#c66730] px-6 py-1.5 text-[1rem] rounded-[20px] text-white mb-9">Explore Church</button>
-            <button className="bg-[#060f1b] px-5 py-1.5 text-[1rem] rounded-[20px] text-white mb-9">Discover Schools</button>
-            </div>
-            <p className="text-[1.3rem] w-[25rem]">
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              alias accusamus deserunt molestias iusto vitae.
-            </p>
+        <div className="px-5 h-full relative z-5 text-white flex flex-col gap-4 items-center justify-center">
+          <p className="text-[0.9rem] font-firasanscondensed">
+            WELCOME TO FREE METHODIST CHURCH
+          </p>
+          <p className="text-[3.3rem] font-firasanscondensed">
+            FAITH, EDUCATION & COMMUNITY
+          </p>
+          <p className="text-sm mb-3">
+            Faith, Education & Community: Building a Stronger Future Together
+          </p>
+          <div className="flex gap-4">
+            <button className="bg-primary px-6 py-2 lg:py-3 text-sm lg:text-[1rem] rounded-full text-white">
+              Explore Church
+            </button>
+            <button className="bg-[#060f1b] px-6 py-2 lg:py-3 text-sm lg:text-[1rem] rounded-full text-white">
+              Discover Schools
+            </button>
           </div>
         </div>
       </div>
