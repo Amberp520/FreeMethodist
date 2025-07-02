@@ -1,5 +1,5 @@
 import React from "react";
-import newsletterimg from "../assets/newsletter/newsletter.jpg";
+import newsletterimg from "../assets/home/newsletter.jpg";
 
 const Newsletter = () => {
   const bgStyle = {

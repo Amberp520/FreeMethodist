@@ -3,6 +3,7 @@ import LogoBanner from "../assets/logo.png";
 import { IoSearchOutline } from "react-icons/io5";
 import { FiMenu, FiX } from "react-icons/fi";
 import { AnimatePresence, motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navItems = [
@@ -23,13 +24,19 @@ const Navbar = () => {
   return (
     <>
       <div className="sticky top-0 bg-white z-[999] w-full flex justify-between py-3 px-5 lg:px-10">
-        <div className="h-[4rem] w-[8rem] object-cover ">
+        <Link to="/" className="h-[4rem] w-[8rem] object-cover ">
           <img className="h-full w-full " src={LogoBanner} alt="" />
-        </div>
+        </Link>
 
         <div className="hidden lg:flex items-center justify-center gap-5 text-[#16325a] text-sm">
           {navItems.map((option, i) => (
-            <p className="capitalize cursor-pointer" key={i}>{option.title.toLowerCase()}</p>
+            <Link
+              to={option.link}
+              className="capitalize cursor-pointer"
+              key={i}
+            >
+              {option.title.toLowerCase()}
+            </Link>
           ))}
         </div>
 
@@ -53,18 +60,19 @@ const Navbar = () => {
               className="flex flex-col gap-5 lg:hidden fixed px-10 h-[87dvh] top-[13%] w-full bg-white shadow-lg !z-[200] pt-[106px] left-0"
             >
               {navItems.map((item, i) => (
-                <motion.a
+                <Link
+                  to={item.link}
                   href={`#${item.position}`}
                   key={i}
                   className={`${
                     i === 3 && "hidden"
                   } flex items-center text-[16px] text-black cursor-pointer`}
-                  // onClick={() => {
-                  //   toggleMenu();
-                  // }}
+                  onClick={() => {
+                    toggleMenu();
+                  }}
                 >
                   {item.title}
-                </motion.a>
+                </Link>
               ))}
             </motion.div>
           )}
