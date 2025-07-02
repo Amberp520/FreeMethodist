@@ -31,7 +31,7 @@ const Welcome = () => {
           />
         </div>
         <div className="h-full flex flex-col justify-center px-5 sm:px-10">
-          <p className="text-primary text-sm font-firasanscondensed font-semibold pb-2">
+          <p className="text-primary text-base font-firasanscondensed font-semibold pb-2">
             Meet Our Supritendent
           </p>
           <p className="text-3xl pb-5 font-semibold font-firasanscondensed">
