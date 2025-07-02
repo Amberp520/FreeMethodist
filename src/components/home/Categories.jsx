@@ -32,7 +32,7 @@ const Categories = () => {
             <p className="text-primary text-lg font-firasanscondensed font-semibold pb-2">
               Middle Belt Eastern Confrence
             </p>
-            <p className="text-[20px] pb-4 text-[#0b192c]">
+            <p className="text-sm pb-4 text-[#0b192c]">
               Our Church Teaches People To Weather Worldly Sorrow And Suffering
               Through Hope
             </p>
