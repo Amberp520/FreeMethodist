@@ -12,7 +12,7 @@ const Navbar = () => {
     { title: "OUR SCHOOLS", link: "/" },
     { title: "BLOG", link: "/" },
     { title: "EVENTS", link: "/" },
-    { title: "MINISTRIES", link: "/" },
+    { title: "MINISTRIES", link: "/ministries" },
     { title: "GALLERY", link: "/" },
     { title: "CONTACT US", link: "/contact-us" },
   ];
