@@ -42,14 +42,14 @@ const MisistryDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className='relative grid grid-cols-1 md:grid-cols-[65%_30%] gap-[5%] px-5 lg:px-10 py-10 h-fit'>
+            <div className='relative grid grid-cols-1 md:grid-cols-[65%_30%] gap-10 md:gap-[5%] px-5 lg:px-10 py-10 h-fit'>
                 <div className='flex flex-col gap-5'>
                     <img className='w-full h-[400px] object-cover' src={userblog.images[0]} alt={userblog.title} />
                     <h1 className='text-3xl md:text-5xl font-firasanscondensed font-semibold'>Welcome to {userblog.title}'s Ministry!</h1>
                     <p className='text-sm text-gray-500'>{userblog.welcomeMessage}</p>
                     <h1 className='text-3xl md:text-5xl font-firasanscondensed font-semibold'>{userblog.title}'s Ministry Features</h1>
                     <p className='text-sm text-gray-500'>{userblog.featuresWriteup}</p>
-                    <ul className='grid grid-cols-2 md:grid-cols-4 gap-2 list-disc list-inside'>
+                    <ul className='grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 list-disc list-inside'>
                         {userblog.features.map((feature, index) => (
                             <li key={index}>{feature}</li>
                         ))}
@@ -59,7 +59,7 @@ const MisistryDetails = () => {
                         <img className='w-full h-[250px] rounded-lg object-cover' src={userblog.images[2]} alt={userblog.title} />
                     </div>
                     <h1 className='text-3xl md:text-5xl font-firasanscondensed font-semibold'>Core Values</h1>
-                    <section id="faqs" className="w-full  h-full px-4 md:px-0">
+                    <section id="faqs" className="w-full h-fit md:h-full px-4 md:px-0">
                         <div className="space-y-4">
                             {coreValues.map((coreValue, i) => (
                                 <FAQItem
@@ -74,7 +74,7 @@ const MisistryDetails = () => {
                         </div>
                     </section>
                 </div>
-                <div className='h-fit flex flex-col gap-5 sticky top-32 right-0 rounded-br-[30px] bg-primary/10 p-5 lg:p-10'>
+                <div className='h-fit flex flex-col gap-5 sticky md:top-32 right-0 rounded-br-[30px] bg-primary/10 p-5 lg:p-10'>
                     <div className='flex flex-col gap-4'>
                         <div className='flex items-center gap-3'>
                             <FaRegClock size={25} className='text-primary' />

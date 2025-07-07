@@ -17,6 +17,7 @@ import adult3 from "../assets/ministries/adult3.jpg"
 import senior1 from "../assets/ministries/senior1.jpg"
 import senior2 from "../assets/ministries/senior2.jpg"
 import senior3 from "../assets/ministries/senior3.jpg"
+import event from "../assets/events/mission.jpg"
 import { FaBookBible, FaHandsPraying, FaPeopleGroup, FaPersonPraying } from "react-icons/fa6"
 import { FaHandHoldingHeart, FaSeedling } from "react-icons/fa"
 
@@ -216,4 +217,35 @@ const coreValues = [
     }
 ];
 
-export { ministries, coreValues };
+const churchEvents = [
+    {
+        image: event,
+        time: "10:00 AM",
+        location: "Agrace Church",
+        title: "Faith and Devotion Seminar",
+        date: "2025-07-12",
+        description:
+            "A powerful session designed to deepen your understanding of faith and ignite unwavering devotion through guided teachings and reflection.",
+    },
+    {
+        image: event,
+        time: "10:00 AM",
+        location: "Agrace Church",
+        title: "Spirituality Discovered Journey",
+        date: "2025-07-12",
+        description:
+            "Explore the essence of true spirituality and embark on a journey of inner transformation and divine connection.",
+    },
+    {
+        image: event,
+        time: "10:00 AM",
+        location: "Agrace Church",
+        title: "The Positive Aura Seminar",
+        date: "2025-07-10",
+        description:
+            "Learn how to cultivate positive energy, embrace mindfulness, and radiate spiritual strength in your daily life.",
+    },
+];
+
+
+export { ministries, coreValues, churchEvents };
