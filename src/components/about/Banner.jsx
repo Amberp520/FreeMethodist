@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <>
       <div>
-        <div className="h-[70dvh] 2xl:h-[800px] w-full relative mb-11">
+        <div className="h-[500px] w-full relative mb-11">
           <img className='h-full w-full object-cover absolute top-0 left-0' src={meeting} alt="" />
           <div className="h-full w-full absolute bg-black top-0 opacity-60" />
 

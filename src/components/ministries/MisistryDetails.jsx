@@ -16,6 +16,7 @@ const MisistryDetails = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }, []);
+    
     const bgStyle = {
         backgroundImage: `url(${ministriesimg})`,
         backgroundSize: "cover",

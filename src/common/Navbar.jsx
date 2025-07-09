@@ -59,7 +59,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: "-100%" }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: "-100%" }}
-              className="flex flex-col gap-5 lg:hidden fixed px-10 h-[88dvh] top-[12%] w-full bg-white shadow-lg !z-[200] pt-[106px] left-0"
+              className={`flex flex-col gap-5 lg:hidden fixed px-10 h-[88dvh] top-[12%] w-full bg-white shadow-lg !z-[200] pt-[106px] left-0`}
             >
               {navItems.map((item, i) => (
                 <Link
@@ -67,7 +67,7 @@ const Navbar = () => {
                   href={`#${item.position}`}
                   key={i}
                   className={`${
-                    i === 3 && "hidden"
+                    pathname === item.link && "text-primary"
                   } flex items-center text-[16px] text-black cursor-pointer`}
                   onClick={() => {
                     toggleMenu();

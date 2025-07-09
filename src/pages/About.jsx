@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../common/Navbar";
 import Banner from "../components/about/Banner";
 import Worship from "../components/about/Worship";
@@ -8,12 +8,16 @@ import OurCoreValue from "../components/about/OurCoreValue";
 import Footer from "../common/Footer";
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+  
   return (
     <div className="max-w-[90rem] mx-auto">
       <Navbar />
       <Banner />
-      <Worship/>
-      <Vision/>
+      <Worship />
+      <Vision />
       <WhatWeDo />
       <OurCoreValue />
       <Footer />
